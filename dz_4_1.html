@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Вывод наибольшего числа</title>
+  </head>
+  <body>
+    <script>
+    var first_number, second_number;
+
+    first_number = +prompt('Введите первое число');  // создаем первое число
+    second_number = +prompt('Введите второе число'); // создаем второе число
+
+    function min(number_1, number_2) {
+
+      return ((number_1 < number_2) ? number_1 : number_2); // возвращаем минимальное значение числа
+    }
+
+    console.log(min(first_number, second_number)); // вывзываем функцию
+    </script>
+  </body>
+</html>

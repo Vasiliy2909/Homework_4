@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Рекурсия</title>
+  </head>
+  <body>
+    <script>
+
+      function isEven(number) {
+        if (number == 0) {
+           return true; // если число равно "0", то оно четное
+         }
+        else if (number == 1)  {
+          return false; // если число равно 1, то оно нечетное
+        }
+        else if (number < 0) {
+          return isEven(-number); // если число отрицательно умножаем его на "-1"
+        }
+        else {
+          return isEven(number - 2); // четность числа N-2 такая же, ка N, поэтому уменьшаем заданное число на 2
+        }
+      }
+
+      console.log(isEven(50));
+      console.log(isEven(75));
+      console.log(isEven(-1));
+
+    </script>
+  </body>
+</html>
